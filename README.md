@@ -1,24 +1,23 @@
-# README
+# Ruby on Rails - Projeto A
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## Primeiro projeto da disciplina Ruby on Rails
+Neste projeto iremos abordar a criação de um novo projeto, o conceito de MVC, a criação de Models, views e controllers manualmente, assim como a configuração de rotas.
 
-Things you may want to cover:
+## Comandos utilizados neste projeto
+-criação de novo projeto
+rails new Tibum -database postgresql
 
-* Ruby version
+-entrando no diretorio do projeto
+cd Tibum
 
-* System dependencies
+-instalando as gems do projeto
+bundle install
 
-* Configuration
+-criando a model de produto
+rails g model Product title:string briefing:text description:text price:integer quantity:integer
 
-* Database creation
+-executando a migração
+rake db:migrate
 
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+-executando nossa aplicação
+rails s

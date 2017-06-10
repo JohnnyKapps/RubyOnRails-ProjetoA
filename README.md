@@ -21,3 +21,5 @@ rake db:migrate
 
 ### Executando nossa aplicação
 rails s
+
+Fim.
